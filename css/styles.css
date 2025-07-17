@@ -667,7 +667,17 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: white;
+  
+}
+
+.page-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full screen height */
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .flip-wrapper {
@@ -695,7 +705,8 @@ body, html {
   height: 100%;
   object-fit: contain;       /* ✅ Show full image */
   backface-visibility: hidden;
-  background-color: var(--bs-light);
+  background-color: #f8f9fa;
+  overflow: hidden;
 }
 
 /* Back image flipped */
